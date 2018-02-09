@@ -1,5 +1,6 @@
 package snake.view;
 
+import snake.controller.SnakeController;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -18,5 +19,11 @@ import javax.swing.Timer;
 
 public class SnakePanel extends JPanel 
 {
-
+	private SnakeController snakeController;
+	
+	public SnakePanel(SnakeController snakeController)
+	{
+		super();
+		this.snakeController = snakeController;
+	}
 }
