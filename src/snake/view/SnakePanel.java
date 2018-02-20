@@ -14,6 +14,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 import javax.swing.Timer;
@@ -22,6 +23,7 @@ public class SnakePanel extends JPanel
 {
 	private SnakeController snakeController;
 	private SpringLayout appLayout;
+	private JButton startButton;
 	
 	public SnakePanel(SnakeController snakeController)
 	{
@@ -29,6 +31,7 @@ public class SnakePanel extends JPanel
 		this.snakeController = snakeController;
 		
 		appLayout = new SpringLayout();
+		startButton = new JButton();
 		
 		setupPanel();
 		setupLayout();
@@ -42,6 +45,9 @@ public class SnakePanel extends JPanel
 	
 	private void setupPanel()
 	{
+		this.setBackground(Color.CYAN);
+		this.setLayout(appLayout);
+		this.add(startButton);
 		
 	}
 	
