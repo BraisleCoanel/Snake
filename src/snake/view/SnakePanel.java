@@ -25,6 +25,8 @@ public class SnakePanel extends JPanel
 	private SpringLayout appLayout;
 	private JButton startButton;
 	
+	Color cyan = Color.decode("#709DD7");
+	
 	public SnakePanel(SnakeController snakeController)
 	{
 		super();
@@ -40,12 +42,14 @@ public class SnakePanel extends JPanel
 	
 	private void setupLayout()
 	{
+		appLayout.putConstraint(SpringLayout.WEST, startButton, 180, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.SOUTH, startButton, 0, SpringLayout.SOUTH, this);
 		
 	}
 	
 	private void setupPanel()
 	{
-		this.setBackground(Color.CYAN);
+		this.setBackground(cyan);
 		this.setLayout(appLayout);
 		this.add(startButton);
 		
