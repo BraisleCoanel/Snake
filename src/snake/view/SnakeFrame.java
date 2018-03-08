@@ -1,6 +1,9 @@
 package snake.view;
 
-public class SnakeFrame
+import snake.controller.SnakeController;
+import javax.swing.JFrame;
+
+public class SnakeFrame extends JFrame
 {
 
 }
