@@ -1,6 +1,7 @@
 package snake.controller;
 
- 
+import snake.view.SnakeFrame;
+import snake.model.Snake;
 
 
 public class SnakeController
