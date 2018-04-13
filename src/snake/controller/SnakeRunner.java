@@ -1,6 +1,8 @@
 package snake.controller;
 
-public class SnakeRunners
+import snake.controller.SnakeController;
+
+public class SnakeRunner
 {
 	public static void main (String [] args)
 	{

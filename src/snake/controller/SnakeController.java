@@ -6,13 +6,13 @@ import snake.model.Snake;
 
 public class SnakeController
 {
-	public void Snake()
+	private SnakeFrame appFrame;
+	private Snake snake;
+	
+	public SnakeController()
 	{
-		
-	}
-	public void Pellet()
-	{
-		
+		snake = new Snake();
+		appFrame = new SnakeFrame(this);
 	}
 	public void start()
 	{
