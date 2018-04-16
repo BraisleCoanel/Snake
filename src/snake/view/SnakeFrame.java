@@ -17,6 +17,7 @@ public class SnakeFrame extends JFrame
 	
 	private void setupFrame()
 	{
+		this.setContentPane(appPanel);
 		this.setVisible(true);
 		this.setResizable(false);
 		this.setTitle("Snake");

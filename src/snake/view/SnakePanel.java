@@ -33,7 +33,7 @@ public class SnakePanel extends JPanel
 		this.snakeController = snakeController;
 		
 		appLayout = new SpringLayout();
-		startButton = new JButton();
+		startButton = new JButton("Start");
 		
 		setupPanel();
 		setupLayout();
@@ -42,7 +42,7 @@ public class SnakePanel extends JPanel
 	
 	private void setupLayout()
 	{
-		appLayout.putConstraint(SpringLayout.WEST, startButton, 180, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.WEST, startButton, 360, SpringLayout.WEST, this);
 		appLayout.putConstraint(SpringLayout.SOUTH, startButton, 0, SpringLayout.SOUTH, this);
 		
 	}
