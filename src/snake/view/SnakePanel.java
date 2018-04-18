@@ -33,7 +33,7 @@ public class SnakePanel extends JPanel
 		this.snakeController = snakeController;
 		
 		appLayout = new SpringLayout();
-		startButton = new JButton("Start");
+		startButton = new JButton("New Game");
 		
 		setupPanel();
 		setupLayout();
