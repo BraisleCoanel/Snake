@@ -23,7 +23,7 @@ public class SnakePanel extends JPanel
 {
 	private SnakeController snakeController;
 	private SpringLayout appLayout;
-	private JButton startButton;
+	private JButton startButton;   
 	
 	Color cyan = Color.decode("#709DD7");
 	
@@ -57,8 +57,18 @@ public class SnakePanel extends JPanel
 	
 	private void setupListeners()
 	{
-		
+		startButton.addActionListener(new ActionListener()
+				{
+			public void actionPerformed(ActionEvent click)
+			{
+				startNewGame();
+			}
+				});
 	}
 	
+	private void startNewGame()
+	{
+		
+	}
 	
 }
