@@ -22,5 +22,6 @@ public class SnakeFrame extends JFrame
 		this.setResizable(false);
 		this.setTitle("Snake");
 		this.setSize(800, 600);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
