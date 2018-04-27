@@ -19,6 +19,7 @@ import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 import javax.swing.Timer;
 import javax.swing.border.LineBorder;
+import java.awt.GridLayout;
 
 public class SnakePanel extends JPanel 
 {
@@ -27,8 +28,9 @@ public class SnakePanel extends JPanel
 	private JButton startButton;
 	JPanel gameBoard = new JPanel();
 	
-	Color cyan = Color.decode("#709DD7");
-	
+	Color cyan = Color.decode("#3E9DD7");
+	Color lightGrey = Color.decode("#BDC4C4");
+
 	public SnakePanel(SnakeController snakeController)
 	{
 		super();
@@ -52,7 +54,8 @@ public class SnakePanel extends JPanel
 		appLayout.putConstraint(SpringLayout.WEST, gameBoard, 15, SpringLayout.WEST, this);
 		appLayout.putConstraint(SpringLayout.SOUTH, gameBoard, -13, SpringLayout.NORTH, startButton);
 		appLayout.putConstraint(SpringLayout.EAST, gameBoard, -15, SpringLayout.EAST, this);
-		gameBoard.setBackground(Color.LIGHT_GRAY);
+		gameBoard.setLayout(new GridLayout(100, 100, 1, 1));
+		
 	}
 	
 	private void setupPanel()
@@ -61,6 +64,7 @@ public class SnakePanel extends JPanel
 		this.setLayout(appLayout);
 		this.add(startButton);
 		this.add(gameBoard);
+		gameBoard.setBackground(lightGrey);
 	}
 	
 	private void setupListeners()
